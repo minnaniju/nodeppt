@@ -4,19 +4,20 @@ app:
     notify: mniju@ecloudcontrol.com
 
 build:
-    version: 14.17
+    version: 0.1
     env: DEV
     build_file: none
     output_files: output/*.zip
     image_template: node-14.17
-
+    args:
+        PUPPETEER: enabled
 
 deploy:
     context: minnaniju/DEV
     replicas: 1
     port:
-    - 8080
-    - 80
+    - 5100
+    
 
 
 properties:
