@@ -4,7 +4,7 @@ app:
     notify: mniju@ecloudcontrol.com
 
 build:
-    version: 10.4
+    version: 14.17
     env: DEV
     build_file: none
     output_files: output/*.zip
