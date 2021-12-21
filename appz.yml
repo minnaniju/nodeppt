@@ -1,0 +1,23 @@
+app:
+    name: nodeppt
+    code: nodeppt
+    notify: mniju@ecloudcontrol.com
+
+build:
+    version: 10.4
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: node-14.17
+
+
+deploy:
+    context: minnaniju/DEV
+    replicas: 1
+    port:
+    - 8080
+    - 80
+
+
+properties:
+    revision: 12
